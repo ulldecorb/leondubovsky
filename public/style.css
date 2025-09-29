@@ -4,6 +4,38 @@ body {
   overflow-x: hidden;
 }
 
+.nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  top: 0;
+  width: 100%;
+  background: none;
+  color: #fff;
+  padding: 1rem;
+  z-index: 10;
+  transition: background 0.3s;
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;    
+  }
+
+  a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #f0f0f0;
+      }
+  }
+}
+
 .parallax-section {
   position: relative;
   min-height: 100vh;
