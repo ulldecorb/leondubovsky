@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.parallax-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.section1 {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/Portales.JPG') center/cover fixed;
+}
+.section2 {
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/assets/C23A25D3-1164-44D9-B213-8F664E2B2C40.PNG') center/cover fixed;
+}
+.section3 {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/assets/portrait.jpg') center/cover fixed;
+}
+.section4 {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/musical-parallax.jpg') center/cover fixed;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+}
+p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  .parallax-section {
+    font-size: 1.2rem;
+    min-height: 60vh;
+  }
+}
